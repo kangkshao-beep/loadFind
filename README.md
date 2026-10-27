@@ -2,6 +2,8 @@
 
 **熟路，一撳就到。** 原生 macOS 桌面資料夾捷徑，只展示 Finder 最近去過嘅 5 個資料夾。預設介面為繁體中文（香港），唔顯示到訪時間、次數或者分數。
 
+本專案發佈於 [kangkshao-beep/loadFind](https://github.com/kangkshao-beep/loadFind)，採用 [MIT 許可](LICENSE)。參考專案嘅授權及聲明保留喺 `Resources/ThirdParty/`。
+
 ## 即刻使用
 
 1. 開啟 `build/FolderHop.app`。可將佢拖入「應用程式」長期使用。
