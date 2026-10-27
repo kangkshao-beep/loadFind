@@ -6,7 +6,7 @@
 
 ## 即刻使用
 
-1. 喺 [GitHub Releases](https://github.com/kangkshao-beep/loadFind/releases/latest) 下載 `FolderHop-macOS-arm64.zip`，解壓縮後開啟 `FolderHop.app`，亦可以將佢拖入「應用程式」長期使用。自行建構則開啟 `build/FolderHop.app`。
+1. 喺 [GitHub Releases](https://github.com/kangkshao-beep/loadFind/releases/latest) 下載 `FolderHop-macOS-arm64.dmg`，開啟後將 `FolderHop.app` 拖入「應用程式」，退出磁碟映像，再開啟已安裝嘅 App。亦提供 ZIP 格式；自行建構則開啟 `build/FolderHop.app`。
 2. 喺面板撳「開啟自動紀錄」，允許 FolderHop 存取 **Finder 自動化**權限。
 3. 正常用 Finder 開幾個資料夾；停留約一至兩秒，列表就會更新。
 4. 撳任何資料夾，一步返到嗰個位置。
@@ -65,6 +65,8 @@ open build/FolderHop.app
 ```
 
 `build-app.sh` 會以 Release 建構、加入原生圖示同權限描述，並作本機 ad-hoc 簽署同驗證。輸出係目前 Mac 架構；今次交付係 **Apple Silicon（arm64）**。Intel Mac 可以用同一份源碼喺當機重新建構。重新建構後，macOS 可能要求重新授予自動化權限。
+
+執行 `./scripts/build-dmg.sh` 可將已建構嘅 App 包裝成 DMG，內附「應用程式」快捷入口及安裝說明。DMG 打包唔會改變 App 嘅簽署或公證狀態。
 
 呢個本機開發版未經 Developer ID 公證。其他 Mac 如攔截開啟，可用 Finder 右鍵「開啟」，或喺「私隱與保安」允許；正式分發應改用 Developer ID 簽署同公證。
 
