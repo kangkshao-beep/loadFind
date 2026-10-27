@@ -6,7 +6,7 @@
 
 ## 即刻使用
 
-1. 開啟 `build/FolderHop.app`。可將佢拖入「應用程式」長期使用。
+1. 喺 [GitHub Releases](https://github.com/kangkshao-beep/loadFind/releases/latest) 下載 `FolderHop-macOS-arm64.zip`，解壓縮後開啟 `FolderHop.app`，亦可以將佢拖入「應用程式」長期使用。自行建構則開啟 `build/FolderHop.app`。
 2. 喺面板撳「開啟自動紀錄」，允許 FolderHop 存取 **Finder 自動化**權限。
 3. 正常用 Finder 開幾個資料夾；停留約一至兩秒，列表就會更新。
 4. 撳任何資料夾，一步返到嗰個位置。

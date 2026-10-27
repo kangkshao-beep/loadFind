@@ -18,6 +18,7 @@ app="$staging/FolderHop.app"
 mkdir -p "$app/Contents/MacOS" "$app/Contents/Resources"
 cp "$binary_dir/FolderHop" "$app/Contents/MacOS/FolderHop"
 cp Resources/Info.plist "$app/Contents/Info.plist"
+cp LICENSE "$app/Contents/Resources/LICENSE.txt"
 cp -R Resources/ThirdParty "$app/Contents/Resources/"
 if [ ! -f Resources/AppIcon.icns ] || [ scripts/draw-icon.swift -nt Resources/AppIcon.icns ]; then
   swift scripts/draw-icon.swift .build/icon-png
